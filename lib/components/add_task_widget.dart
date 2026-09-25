@@ -51,6 +51,9 @@ class _AddTaskWidgetState extends State<AddTaskWidget> {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
+      constraints: BoxConstraints(
+        maxWidth: 400.0,
+      ),
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).secondaryBackground,
         borderRadius: BorderRadius.only(
