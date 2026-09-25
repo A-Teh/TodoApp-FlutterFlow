@@ -4,15 +4,14 @@
   "description": "Schema for user documents in Firestore",
   "type": "object",
   "properties": {
-    "created_time": {
-      "description": "The time when the user was created",
-      "type": "string",
-      "format": "date-time"
-    },
     "email": {
       "description": "The email address of the user",
       "type": "string",
       "format": "email"
+    },
+    "display_name": {
+      "description": "The display name of the user",
+      "type": "string"
     },
     "photo_url": {
       "description": "The URL of the user's profile photo",
@@ -22,7 +21,25 @@
     "uid": {
       "description": "The unique identifier of the user",
       "type": "string"
+    },
+    "created_time": {
+      "description": "The time when the user was created",
+      "type": "string",
+      "format": "date-time"
+    },
+    "phone_number": {
+      "description": "The user's phone number",
+      "type": "string"
+    },
+    "birthday": {
+      "description": "The user's birthdate",
+      "type": "string",
+      "format": "date-time"
+    },
+    "occupation": {
+      "description": "The user's occupation",
+      "type": "string"
     }
   },
-  "required": ["created_time", "email", "uid"]
+  "required": ["email", "uid", "created_time"]
 }

@@ -4,27 +4,27 @@
   "description": "Schema for task documents in Firestore",
   "type": "object",
   "properties": {
-    "completed": {
-      "description": "Status of the task completion",
-      "type": "boolean"
-    },
-    "created": {
-      "description": "The time when the task was created",
-      "type": "string",
-      "format": "date-time"
+    "title": {
+      "description": "The title of the task",
+      "type": "string"
     },
     "details": {
       "description": "The details of the task",
       "type": "string"
     },
-    "title": {
-      "description": "The title of the task",
-      "type": "string"
+    "completed": {
+      "description": "Status of the task completion",
+      "type": "boolean"
     },
     "user": {
-      "description": "Reference to the user who created the task",
+      "description": "Reference to the user document who created the task",
       "type": "string"
+    },
+    "created": {
+      "description": "The time when the task was created",
+      "type": "string",
+      "format": "date-time"
     }
   },
-  "required": ["completed", "created", "title", "user"]
+  "required": ["title", "completed", "user", "created"]
 }
