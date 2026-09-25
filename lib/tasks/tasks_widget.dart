@@ -100,13 +100,26 @@ class _TasksWidgetState extends State<TasksWidget> {
                 maxWidth: 400.0,
               ),
               decoration: BoxDecoration(),
-              child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 24.0),
+              alignment: AlignmentDirectional(0.0, 0.0),
+              child: Align(
+                alignment: AlignmentDirectional(0.0, 0.0),
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: (FFMainAxisAlignment.start).flutterValue,
                   crossAxisAlignment: (FFCrossAxisAlignment.start).flutterValue,
                   textBaseline: TextBaseline.alphabetic,
                   children: [
+                    Align(
+                      alignment: AlignmentDirectional(-1.0, -1.0),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(8.0),
+                        child: Image.asset(
+                          'assets/images/cube_logo_AT-ToDo.png',
+                          width: 120.0,
+                          fit: BoxFit.contain,
+                        ),
+                      ),
+                    ),
                     Padding(
                       padding:
                           EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 0.0, 0.0),

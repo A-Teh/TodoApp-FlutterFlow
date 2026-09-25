@@ -75,6 +75,19 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: (FFMainAxisAlignment.end).flutterValue,
                   children: [
+                    Row(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(8.0),
+                          child: Image.asset(
+                            'assets/images/cube_logo_AT-ToDo.png',
+                            width: 120.0,
+                            fit: BoxFit.contain,
+                          ),
+                        ),
+                      ],
+                    ),
                     Expanded(
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
